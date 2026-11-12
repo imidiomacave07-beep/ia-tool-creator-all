@@ -1,0 +1,10 @@
+
+const videoService = require("./videoService");
+const imageService = require("./imageService");
+const fileService = require("./fileService");
+
+module.exports = {
+  videoService,
+  imageService,
+  fileService,
+};
