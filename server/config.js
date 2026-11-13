@@ -19,5 +19,20 @@ module.exports = {
     path.join(serverRoot, "uploads"),
 
   outputDir:
-    path.join(serverRoot, "outputs")
+    path.join(serverRoot, "outputs"),
+
+  imageProvider:
+    process.env.IMAGE_PROVIDER || "none",
+
+  videoProvider:
+    process.env.VIDEO_PROVIDER || "none",
+
+  cloudflareAccountId:
+    process.env.CLOUDFLARE_ACCOUNT_ID || "",
+
+  cloudflareApiToken:
+    process.env.CLOUDFLARE_API_TOKEN || "",
+
+  replicateApiToken:
+    process.env.REPLICATE_API_TOKEN || ""
 };
